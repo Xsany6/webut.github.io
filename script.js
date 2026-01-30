@@ -304,35 +304,24 @@ searchInput.addEventListener('keydown', (e) => {
     }
 });
 
-// ===== DOWNLOAD FUNCTION =====
-function downloadFile(filename) {
-    // Ambil tombol yang diklik
-    const btn = event.target.closest('.download-btn');
-    const originalText = btn.innerHTML;
+// ===== DOWNLOAD FUNCTION (Optional - untuk tracking) =====
+// Karena sekarang menggunakan direct link, fungsi ini opsional
+// Bisa digunakan untuk tracking download jika diperlukan
+document.addEventListener('DOMContentLoaded', () => {
+    const downloadBtns = document.querySelectorAll('.download-btn');
     
-    // Disable tombol dan tampilkan loading
-    btn.innerHTML = '<span>⏳</span> Mengunduh...';
-    btn.disabled = true;
-    btn.style.opacity = '0.7';
-    
-    // Simulasi download
-    setTimeout(() => {
-        btn.innerHTML = '<span>✅</span> Berhasil!';
-        btn.style.opacity = '1';
-        
-        // Reset tombol setelah 2 detik
-        setTimeout(() => {
-            btn.innerHTML = originalText;
-            btn.disabled = false;
-        }, 2000);
-        
-        // Tampilkan notifikasi download
-        showDownloadNotification(filename);
-        
-        // Di production, trigger actual download
-        console.log(`Download started: ${filename}`);
-    }, 1500);
-}
+    downloadBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const filename = btn.closest('.download-card').querySelector('h3').textContent;
+            console.log(`Download started: ${filename}`);
+            
+            // Tampilkan notifikasi download
+            setTimeout(() => {
+                showDownloadNotification(filename);
+            }, 500);
+        });
+    });
+});
 
 // Fungsi untuk menampilkan notifikasi download
 function showDownloadNotification(filename) {
