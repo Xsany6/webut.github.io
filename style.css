@@ -420,11 +420,13 @@ section {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    text-decoration: none;
 }
 
 .download-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 20px rgba(255,0,0,0.4);
+    color: var(--white);
 }
 
 .download-btn:active {
