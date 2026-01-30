@@ -1,0 +1,6 @@
+- [x] Update index.html with modern HTML structure including header, hero, about, services, contact, footer
+- [x] Add inline CSS for modern styling with dominant colors red, black, white
+- [x] Include the company image in the header or hero section
+- [x] Ensure responsive design
+- [x] Test the website by opening in browser
+- [x] Add images from internet to enhance UI/UX (hero background, service images)

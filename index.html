@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-Vub - Download Center</title>
+    <link rel="shortcut icon" href="./images/images.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header dengan Navbar yang Diperbaiki -->
+    <header id="header">
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-icon">IT</div>
+                    <span>Tim IT-Varia Usaha Beton</span>
+                </div>
+                
+                <!-- Menu Navigasi -->
+                <div class="nav-menu" id="navMenu">
+                    <a href="#downloads" class="nav-link">Download</a>
+                    <a href="#quick-access" class="nav-link">Akses Cepat</a>
+                    <a href="#help" class="nav-link">Bantuan</a>
+                    
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Gudangnya Software <br> Bukan Gudangnya Mantan</h1>
+            <p>Portal Download Software bagi Karyawan yang Komputernya Bermasalah</p>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari aplikasi atau program...">
+                <span class="search-icon">🔍</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="downloads" style="background: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Download Aplikasi & Program</h2>
+                <p>Pilih kategori dan unduh aplikasi yang Anda butuhkan</p>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="category-tabs-wrapper">
+                <div class="category-tabs" id="categoryTabs">
+                    <button class="tab-btn active" data-category="all">Semua</button>
+                    <button class="tab-btn" data-category="aplikasi">Aplikasi Utama</button>
+                    <button class="tab-btn" data-category="software">Software & OS</button>
+                    <button class="tab-btn" data-category="tools">Tools Aktivasi</button>
+                    <button class="tab-btn" data-category="utilities">Utilities</button>
+                    <button class="tab-btn" data-category="document">Dokumen</button>
+                    <button class="tab-btn" data-category="mobile">Mobile Apps</button>
+                </div>
+            </div>
+
+            <!-- Download Grid -->
+            <div class="download-grid" id="downloadGrid">
+                <!-- Software & OS -->
+                <div class="download-card" data-category="software">
+                    <div class="app-icon">💿</div>
+                    <h3>Windows 11 Pro ISO</h3>
+                    <span class="version">22H2 Build 22621</span>
+                    <p>ISO installer Windows 11 Professional 64-bit resmi dari Microsoft untuk instalasi bersih atau upgrade.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">5.2 GB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">Jan 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">ISO x64</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('windows-11-pro')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <div class="download-card" data-category="software">
+                    <div class="app-icon">💿</div>
+                    <h3>Windows 10 Pro ISO</h3>
+                    <span class="version">22H2 Build 19045</span>
+                    <p>ISO installer Windows 10 Professional 64-bit untuk komputer yang belum support Windows 11.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">4.8 GB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">Jan 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">ISO x64</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('windows-10-pro')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <div class="download-card" data-category="software">
+                    <div class="app-icon">📊</div>
+                    <h3>Microsoft Office 2021</h3>
+                    <span class="version">Professional Plus</span>
+                    <p>Microsoft Office 2021 lengkap dengan Word, Excel, PowerPoint, Outlook, dan aplikasi produktivitas lainnya.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">3.4 GB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">Jan 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">Windows</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('office-2021')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <div class="download-card" data-category="software">
+                    <div class="app-icon">🎨</div>
+                    <h3>Adobe Acrobat Pro DC</h3>
+                    <span class="version">2023.006.20320</span>
+                    <p>Software PDF terlengkap untuk membuat, edit, convert, dan mengelola dokumen PDF profesional.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">867 MB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">Jan 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">Windows</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('adobe-acrobat')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <!-- Tools Aktivasi -->
+                <div class="download-card" data-category="tools">
+                    <div class="app-icon">🔑</div>
+                    <h3>KMSpico Activator</h3>
+                    <span class="version">v11.3.0 Final</span>
+                    <p>Tool aktivasi untuk Windows dan Office. Gunakan hanya untuk lisensi perusahaan yang sah.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">3.5 MB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">Des 2023</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">Windows</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('kmspico')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <div class="download-card" data-category="tools">
+                    <div class="app-icon">🔓</div>
+                    <h3>Microsoft Toolkit</h3>
+                    <span class="version">v2.7.3</span>
+                    <p>Toolkit lengkap untuk aktivasi dan manajemen lisensi Microsoft Office dan Windows.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">52 MB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">Des 2023</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">Windows</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('ms-toolkit')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <div class="download-card" data-category="tools">
+                    <div class="app-icon">⚡</div>
+                    <h3>Windows Loader</h3>
+                    <span class="version">v2.2.2</span>
+                    <p>Aktivator Windows 7, 8, 10 yang aman dan terpercaya untuk keperluan internal perusahaan.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">2.1 MB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">Nov 2023</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">Windows</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('windows-loader')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <div class="download-card" data-category="tools">
+                    <div class="app-icon">🛡️</div>
+                    <h3>Office Tool Plus</h3>
+                    <span class="version">v10.1.5</span>
+                    <p>Tool deploy dan manajemen Office dengan fitur download, install, aktivasi, dan konfigurasi.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">15 MB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">Jan 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">Windows</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('office-tool-plus')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <!-- Aplikasi Utama -->
+                <div class="download-card" data-category="aplikasi">
+                    <div class="app-icon">📱</div>
+                    <h3>VB Master System</h3>
+                    <span class="version">v3.2.1</span>
+                    <p>Sistem manajemen utama untuk operasional IT-Vub. Mencakup modul produksi, inventory, dan distribusi.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">125 MB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">15 Jan 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">Windows</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('vb-master-system')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <div class="download-card" data-category="aplikasi">
+                    <div class="app-icon">💰</div>
+                    <h3>VB Finance Pro</h3>
+                    <span class="version">v2.8.5</span>
+                    <p>Aplikasi keuangan dan akuntansi terintegrasi untuk manajemen finansial perusahaan.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">89 MB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">12 Jan 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">Windows</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('vb-finance-pro')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <div class="download-card" data-category="aplikasi">
+                    <div class="app-icon">📊</div>
+                    <h3>VB Analytics Dashboard</h3>
+                    <span class="version">v1.9.2</span>
+                    <p>Dashboard analitik real-time untuk monitoring performa dan KPI perusahaan.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">67 MB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">10 Jan 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">Web App</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('vb-analytics')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <!-- Utilities -->
+                <div class="download-card" data-category="utilities">
+                    <div class="app-icon">🔧</div>
+                    <h3>VB Production Calculator</h3>
+                    <span class="version">v2.1.0</span>
+                    <p>Kalkulator produksi beton untuk menghitung komposisi material dan estimasi biaya.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">23 MB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">08 Jan 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">Windows</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('vb-calculator')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <div class="download-card" data-category="utilities">
+                    <div class="app-icon">🚚</div>
+                    <h3>VB Delivery Tracker</h3>
+                    <span class="version">v1.7.3</span>
+                    <p>Tools untuk tracking pengiriman beton ready mix secara real-time ke lokasi proyek.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">45 MB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">05 Jan 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">Windows</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('vb-delivery')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <div class="download-card" data-category="utilities">
+                    <div class="app-icon">📝</div>
+                    <h3>VB Report Generator</h3>
+                    <span class="version">v3.0.1</span>
+                    <p>Generator laporan otomatis untuk berbagai kebutuhan pelaporan perusahaan.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">56 MB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">03 Jan 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">Windows</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('vb-report')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <!-- Dokumen & Template -->
+                <div class="download-card" data-category="document">
+                    <div class="app-icon">📄</div>
+                    <h3>Template Surat Resmi</h3>
+                    <span class="version">v2024.1</span>
+                    <p>Kumpulan template surat resmi perusahaan dalam format Word dan PDF.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">12 MB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">02 Jan 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">ZIP File</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('template-surat')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <div class="download-card" data-category="document">
+                    <div class="app-icon">📋</div>
+                    <h3>SOP & Panduan Kerja</h3>
+                    <span class="version">v2024.1</span>
+                    <p>Standard Operating Procedure dan panduan kerja untuk semua departemen.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">34 MB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">01 Jan 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">PDF</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('sop-panduan')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <!-- Mobile Apps -->
+                <div class="download-card" data-category="mobile">
+                    <div class="app-icon">📲</div>
+                    <h3>VB Mobile App</h3>
+                    <span class="version">v1.5.0</span>
+                    <p>Aplikasi mobile untuk akses sistem dari smartphone Android dan iOS.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">78 MB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">14 Jan 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">Android/iOS</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('vb-mobile')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+
+                <div class="download-card" data-category="mobile">
+                    <div class="app-icon">⏰</div>
+                    <h3>VB Attendance App</h3>
+                    <span class="version">v2.3.1</span>
+                    <p>Aplikasi absensi mobile dengan fitur GPS tracking dan face recognition.</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Ukuran</span>
+                            <span class="info-value">52 MB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Update</span>
+                            <span class="info-value">11 Jan 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Platform</span>
+                            <span class="info-value">Android/iOS</span>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadFile('vb-attendance')">
+                        <span>⬇️</span> Download Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section id="quick-access" class="quick-access">
+        <div class="container">
+            <div class="section-header">
+                <h2>Akses Cepat</h2>
+                <p>Tautan penting untuk karyawan</p>
+            </div>
+            <div class="quick-links">
+                <a href="#" class="quick-link-card">
+                    <div class="quick-icon">🌐</div>
+                    <div>
+                        <h3>Portal HR</h3>
+                        <p>Akses sistem HR & payroll</p>
+                    </div>
+                </a>
+                <a href="#" class="quick-link-card">
+                    <div class="quick-icon">📧</div>
+                    <div>
+                        <h3>Email Perusahaan</h3>
+                        <p>Webmail IT-Vub</p>
+                    </div>
+                </a>
+                <a href="#" class="quick-link-card">
+                    <div class="quick-icon">📚</div>
+                    <div>
+                        <h3>Knowledge Base</h3>
+                        <p>Dokumentasi & tutorial</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Section -->
+    <section id="help" class="help-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Butuh Bantuan?</h2>
+                <p>Tim IT Support siap membantu Anda</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>IT-Vub</h3>
+                    <p>Portal Download Software bagi Karyawan yang Komputernya Bermasalah. Akses aplikasi, program, dan tools yang Anda butuhkan dengan mudah dan cepat.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Syukron - Tim IT.</p>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Help Button -->
+    <div class="help-floating">
+        <a href="#help" class="help-link">❓ Butuh Bantuan?</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
